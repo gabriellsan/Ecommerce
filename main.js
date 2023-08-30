@@ -65,7 +65,7 @@ const catalogo = [
 ];
 
 for(const produtoCatalogo of catalogo){
-    const cartaoProduto = `<div class='div-main-card border-solid border-2 border-sky-500 w-48 my-2' id="card-produto-${produtoCatalogo.id}">
+    const cartaoProduto = `<div class='div-main-card border-solid border-2 border-sky-500 w-48 m-2' id="card-produto-${produtoCatalogo.id}">
     <img 
         src="./assets/img/${produtoCatalogo.imagem}" 
         alt="Produto 1 do Ecommerce" 
