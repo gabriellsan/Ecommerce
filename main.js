@@ -6,5 +6,6 @@ renderizarCatalogo();
 inicializarCarrinho();
 renderizarProdutosCarrinho();
 atualizarPrecoCarrinho();
-inicializarFiltros();
+inicializarFiltros()
+inicializarFiltros;
 
