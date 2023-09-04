@@ -61,7 +61,55 @@ export const catalogo = [
         preco: 88, 
         imagem: 'product-8.jpg', 
         feminino: true, 
-    }
+    },
+    { 
+        id: '9', 
+        marca: 'Zara', 
+        nome: 'Vestido azul forte com flores', 
+        preco: 112, 
+        imagem: 'product-9.jpg', 
+        feminino: true, 
+    },
+    { 
+        id: '10', 
+        marca: 'Zara', 
+        nome: 'Saia azul quadriculada, com blusa preta', 
+        preco: 120, 
+        imagem: 'product-10.jpg', 
+        feminino: true, 
+    },
+    { 
+        id: '11', 
+        marca: 'Zara', 
+        nome: 'Blusa preta e saia preta com cinto e-girl', 
+        preco: 160, 
+        imagem: 'product-11.jpg', 
+        feminino: true, 
+    },
+    { 
+        id: '12', 
+        marca: 'Zara', 
+        nome: 'Camisa social branca com calça social', 
+        preco: 90, 
+        imagem: 'product-12.jpg', 
+        feminino: false, 
+    },
+    { 
+        id: '13', 
+        marca: 'Zara', 
+        nome: 'Kit casaco e calça preto', 
+        preco: 159, 
+        imagem: 'product-13.jpg', 
+        feminino: false, 
+    },
+    { 
+        id: '14', 
+        marca: 'Zara', 
+        nome: 'Camisa social branca e calça social azul', 
+        preco: 199, 
+        imagem: 'product-14.jpg', 
+        feminino: false, 
+    },
 ];
 
 export function salvarLocalStorage(chave, informacao){
