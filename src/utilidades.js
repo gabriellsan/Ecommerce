@@ -132,19 +132,20 @@ export function desenharProdutoCartSimples(idProduto,idContainerHtml, qtdProduto
     
     for(const aticleClass of articleClasses){
       elementoArticle.classList.add(aticleClass);
+     
+      const cartaoProdutoCarrinho = `<img class="h-24 rounded-lg" src="./assets/img/${produto.imagem}" alt="Carrinho:${produto.nome}">
+          <div class="p-2 flex flex-col justify-between"> <!--py === padding na vertical & px === padding na horizontal -->
+            <p class="text-slate-900 text-sm">${produto.nome}</p>
+            <p class="text-slate-400 text-xs">Tamanho: M</p>
+            <p class="text-green-700 text-lg">$${produto.preco}</p>
+          </div>
+          <div class="flex text-slate-950 items-end absolute bottom-0 right-2 text-lg">
+            <p class="ml-2" id='quantidade-${produto.id}'>${qtdProduto}</p>
+          </div>
+        `;
+        elementoArticle.innerHTML = cartaoProdutoCarrinho;
+        conteinerProdutosCarrinho.appendChild(elementoArticle);
     }
   
-    const cartaoProdutoCarrinho = `<img class="h-24 rounded-lg" src="./assets/img/${produto.imagem}" alt="Carrinho:${produto.nome}">
-        <div class="p-2 flex flex-col justify-between"> <!--py === padding na vertical & px === padding na horizontal -->
-          <p class="text-slate-900 text-sm">${produto.nome}</p>
-          <p class="text-slate-400 text-xs">Tamanho: M</p>
-          <p class="text-green-700 text-lg">$${produto.preco}</p>
-        </div>
-        <div class="flex text-slate-950 items-end absolute bottom-0 right-2 text-lg">
-          <p class="ml-2" id='quantidade-${produto.id}'>${qtdProduto}</p>
-        </div>
-      `;
-    elementoArticle.innerHTML = cartaoProdutoCarrinho;
-    conteinerProdutosCarrinho.appendChild(elementoArticle);
  }
   
